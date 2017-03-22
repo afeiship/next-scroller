@@ -1,4 +1,4 @@
-(function() {
+(function () {
 
   'use strict';
 
@@ -9,15 +9,16 @@
     pattern: ['gulp-*', 'gulp.*', 'del']
   });
 
-  gulp.task('build', ['clean'], function() {
+  gulp.task('build', ['clean'], function () {
     return gulp.src('src/*.js')
       .pipe(gulp.dest('dist'))
-      .pipe($.size({title:'[ default size ]:'}))
+      .pipe($.size({title: '[ default size ]:'}))
       .pipe($.uglify())
       .pipe($.rename({
         extname: '.min.js'
       }))
-      .pipe(gulp.dest('dist'));
+      .pipe(gulp.dest('dist'))
+      .pipe($.size({title: '[ minimize size ]:'}));
   });
 
 }());
