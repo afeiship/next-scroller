@@ -1,0 +1,9 @@
+node_modules
+bower_components
+coverage
+.idea
+dist
+npm-debug.log
+gulp
+src
+gulpfile.js
