@@ -1,8 +1,7 @@
-(function (nx, global) {
+(function (global) {
 
   // add npm support:
-  nx = nx || require('next-js-core2');
-
+  var nx = window.nx || require('next-js-core2');
   var Animate = nx.Animate || require('next-animate');
   var easeOutCubic = function (pos) {
     return (Math.pow((pos - 1), 3) + 1);
@@ -1295,4 +1294,4 @@
     module.exports = Scroller;
   }
 
-}(nx, nx.GLOBAL));
+}(this));
