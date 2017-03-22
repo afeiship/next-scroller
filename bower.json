@@ -22,5 +22,9 @@
     "src",
     "gulp",
     "gulpfile.js"
-  ]
+  ],
+  "dependencies": {
+    "next-animate": "github:afeiship/next-animate",
+    "next-js-core2": "github:afeiship/next-js-core2"
+  }
 }
