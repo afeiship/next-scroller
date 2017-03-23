@@ -8,6 +8,9 @@
     "email": "1290657123@qq.com"
   },
   "main":"dist/next-scroller.js",
+  "scripts":{
+    "build":"gulp"
+  },
   "license": "MIT",
   "devDependencies": {
     "del": "^2.2.1",

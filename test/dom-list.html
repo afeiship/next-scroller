@@ -62,9 +62,12 @@
 		font-weight: bold;
 		height: 50px;
 		margin-top: -50px;
+
 		text-align: center;
+
 		font-size: 16px;
 		line-height: 50px;
+
 
 		-webkit-transition: background-color 300ms;
 		-moz-transition: background-color 300ms;
@@ -75,16 +78,20 @@
 
 	.refresh.active{
 		background: #006eb3;
+
 	}
 
 	.refresh.running{
 		background: #00b373;
 	}
 
+
+
 	</style>
 
 </head>
 <body>
+
 	<div id="container">
 		<div id="content"><div class="refresh">下拉刷新</div></div>
 	</div>
@@ -210,6 +217,8 @@
 			if (!mousedown) {
 				return;
 			}
+
+      console.log(e.timeStamp);
 
 			scroller.doTouchEnd(e.timeStamp);
 

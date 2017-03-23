@@ -1,7 +1,7 @@
 (function (global) {
 
   // add npm support:
-  var nx = window.nx || require('next-js-core2');
+  var nx = global.nx || require('next-js-core2');
   var Animate = nx.Animate || require('next-animate');
   var easeOutCubic = function (pos) {
     return (Math.pow((pos - 1), 3) + 1);
