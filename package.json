@@ -25,6 +25,6 @@
   },
   "dependencies": {
     "next-animate": "github:afeiship/next-animate",
-    "next-js-core2": "github:afeiship/next-js-core2"
+    "next-js-core2": "*"
   }
 }
